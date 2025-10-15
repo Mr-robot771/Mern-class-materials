@@ -26,8 +26,7 @@ function UserPatch() {
       <div className="bg-white h-[100%] text-black flex flex-col items-center justify-center relative">
         <div className="p-5 relative z-100">
           <h1 className="mb-10 text-3xl font-bold text-center">User data</h1>
-          <p className="mb-5">
-            {" "}
+          <p>
             <span className="font-semibold">First Name:</span> {user.firstName}
           </p>
           <p className="mb-5">
@@ -37,7 +36,7 @@ function UserPatch() {
             <span className="font-semibold">Email:</span> {user.email}
           </p>
           <p className="mb-5">
-            <span className="font-semibold">Contact Number:</span>{" "}
+            <span className="font-semibold">Contact Number:</span>
             {user.contactNumber}
           </p>
           <div className="absolute inset-0 bg-transparent shadow-xl rounded-md border-2 border-gray-50 shadow-blue-500 animate-pulse"></div>
