@@ -26,7 +26,7 @@ function UserPatch() {
       <div className="bg-white h-[100%] text-black flex flex-col items-center justify-center relative">
         <div className="p-5 relative z-100">
           <h1 className="mb-10 text-3xl font-bold text-center">User data</h1>
-          <p>
+          <p className="mb-5">
             <span className="font-semibold">First Name:</span> {user.firstName}
           </p>
           <p className="mb-5">
