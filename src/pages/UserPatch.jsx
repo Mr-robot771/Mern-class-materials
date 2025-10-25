@@ -4,9 +4,11 @@ import api from "../services/axiosInstance";
 import { IoMdArrowRoundBack } from "react-icons/io";
 
 function UserPatch() {
-  const navigate = useNavigate();
-  const { id } = useParams();
   const [user, setUser] = useState("");
+
+  const navigate = useNavigate();
+
+  const { id } = useParams();
 
   const fetchUser = async () => {
     try {
