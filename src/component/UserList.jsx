@@ -71,7 +71,7 @@ function UserList({ users, onClick, fetchUsers }) {
                     </button>
                   </td>
                   <td>
-                    <Link className="flex justify-center" to={`/Users/${user._id}`}>
+                    <Link className="flex justify-center" to={`/Users/${user._id}`} state={state}>
                       <FaEye size={14} className="hover:cursor-pointer" />
                     </Link>
                   </td>

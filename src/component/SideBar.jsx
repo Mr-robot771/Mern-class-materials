@@ -30,9 +30,9 @@ function SideBar() {
     },
     {
       id: 4,
-      label: "Experience",
+      label: "Payment",
       icon: <MdWorkHistory className="w-6 h-6 fill-blue-500" />,
-      to: "/Experience",
+      to: "/payment",
     },
     {
       id: 5,

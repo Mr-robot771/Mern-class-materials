@@ -23,7 +23,7 @@ export const router = createBrowserRouter([
       },
       {
         element: <Experience />,
-        path: "/Experience",
+        path: "/payment",
       },
       {
         element: <Skills />,

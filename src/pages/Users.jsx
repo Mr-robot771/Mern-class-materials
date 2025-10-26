@@ -21,6 +21,8 @@ const schema = z.object({
 });
 
 function Users() {
+  const [users, setUsers] = useState([]);
+
   const {
     register,
     reset,
@@ -56,7 +58,7 @@ function Users() {
       console.error(error);
     }
   }
-  const [users, setUsers] = useState([]);
+
   const fetchAllData = useCallback(async () => {
     try {
       const res = await api.get("user");
@@ -71,11 +73,12 @@ function Users() {
   }, [fetchAllData]);
 
   const location = useLocation();
+
   const { opens } = location.state || {};
 
-  console.log(location);
-
   const [open, setOpen] = useState(opens || false);
+
+  console.log(location);
 
   function showUser() {
     setOpen(!open);
